@@ -40,8 +40,10 @@ const CreateAllFolder = require("./config/uploadFolderCreateScript");
 CreateAllFolder();
 
 // Database Connection
+// mongodb+srv://admin:tGw1ZQrhRAfrOtad@cluster0.7obr7ky.mongodb.net/
 mongoose
-  .connect(process.env.DATABASE, {
+  // .connect(process.env.DATABASE, {
+    .connect("mongodb+srv://admin:tGw1ZQrhRAfrOtad@cluster0.7obr7ky.mongodb.net/", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
