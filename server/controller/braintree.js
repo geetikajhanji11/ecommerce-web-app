@@ -3,9 +3,9 @@ require("dotenv").config();
 
 var gateway = new braintree.BraintreeGateway({
   environment: braintree.Environment.Sandbox,
-  merchantId: process.env.BRAINTREE_MERCHANT_ID,
-  publicKey: process.env.BRAINTREE_PUBLIC_KEY,
-  privateKey: process.env.BRAINTREE_PRIVATE_KEY,
+  merchantId: "kfhtyr3jd5d53f99", //process.env.BRAINTREE_MERCHANT_ID,
+  publicKey: "yjp2mc4tt9dntcs5",//process.env.BRAINTREE_PUBLIC_KEY,
+  privateKey: "4e411c4da3f72f6c7e0748731a0ae5d2",//process.env.BRAINTREE_PRIVATE_KEY,
 });
 
 class brainTree {
